@@ -19,7 +19,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.*
-import androidx.compose.material.ripple.rememberRipple
+import androidx.compose.material3.ripple
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -194,7 +194,7 @@ fun MainAppScaffold(viewModel: AppViewModel) {
                             .clip(RoundedCornerShape(16.dp))
                             .clickable(
                                 interactionSource = interactionSource,
-                                indication = rememberRipple(bounded = false, radius = 24.dp)
+                                indication = ripple(bounded = false, radius = 24.dp)
                             ) {
                                 if (currentRoute != item.route) {
                                     navController.navigate(item.route) {

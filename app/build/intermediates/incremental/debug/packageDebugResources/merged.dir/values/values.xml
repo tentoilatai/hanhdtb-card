@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quản Lý Thẻ</string>
+    <style name="Theme.QuanLyThe" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#FFE4EC</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

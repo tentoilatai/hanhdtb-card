@@ -9,7 +9,7 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
-import androidx.compose.material.ripple.rememberRipple
+import androidx.compose.material3.ripple
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
@@ -206,7 +206,7 @@ fun GlassCard(
     val clickableModifier = if (onClick != null) {
         Modifier.clickable(
             interactionSource = remember { MutableInteractionSource() },
-            indication = rememberRipple(color = GlassThemeColors.Accent.copy(alpha = 0.2f)),
+            indication = ripple(color = GlassThemeColors.Accent.copy(alpha = 0.2f)),
             onClick = onClick
         )
     } else {
@@ -384,7 +384,7 @@ fun GlassButton(
                 .clickable(
                     enabled = enabled,
                     interactionSource = remember { MutableInteractionSource() },
-                    indication = rememberRipple(color = GlassThemeColors.Accent.copy(alpha = 0.2f)),
+                    indication = ripple(color = GlassThemeColors.Accent.copy(alpha = 0.2f)),
                     onClick = onClick
                 ),
             contentAlignment = Alignment.Center
